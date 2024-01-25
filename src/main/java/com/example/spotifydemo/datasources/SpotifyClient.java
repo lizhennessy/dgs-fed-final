@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Component
 public class SpotifyClient {
-    private static final String SPOTIFY_API_URL = "http://localhost:4001/v1";
+    private static final String SPOTIFY_API_URL = "https://spotify-demo-api-fe224840a08c.herokuapp.com/v1";
     private final WebClient builder = WebClient.builder().baseUrl(SPOTIFY_API_URL).build();
 
     public PlaylistList featuredPlaylistsRequest() {
